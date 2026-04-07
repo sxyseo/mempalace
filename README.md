@@ -74,6 +74,44 @@ Three mining modes: **projects** (code and docs), **convos** (conversation expor
 
 ---
 
+## Visual Interface 🎨
+
+MemPalace now offers an Obsidian-like visual interface for browsing and managing AI memories.
+
+### Web UI (Recommended)
+
+**Get started immediately:**
+```bash
+# Install Web UI dependencies
+pip install -e ".[web]"
+
+# Launch the web server
+mempalace web
+
+# Visit http://localhost:5000
+```
+
+**Features:**
+- 🏰 **Palace View** - Visual wing → hall → room hierarchy
+- 🔍 **Semantic Search** - Find relevant memories quickly
+- 📝 **Memory Details** - View complete memory content
+- 🕸️ **Knowledge Graph** - Entity relationship visualization (in development)
+- 📊 **Statistics Dashboard** - Memory counts and distribution (in development)
+
+**Full Guide:** [docs/VISUAL_GUIDE.md](docs/VISUAL_GUIDE.md) | [web_ui/README.md](web_ui/)
+
+### Obsidian Plugin (Coming Soon)
+
+Currently in development, will support:
+- 📚 View MemPalace memories in Obsidian
+- 🔄 Bidirectional sync (Obsidian ↔ MemPalace)
+- 🕸️ Memory connections in Graph View
+- ✏️ Edit using Obsidian's powerful editing features
+
+**Dev Docs:** [obsidian_plugin/README.md](obsidian_plugin/)
+
+---
+
 ## How You Actually Use It
 
 After the one-time setup (install → init → mine), you don't run MemPalace commands manually. Your AI uses it for you. There are two ways, depending on which AI you use.

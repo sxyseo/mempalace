@@ -74,6 +74,44 @@ mempalace status
 
 ---
 
+## 可视化界面 🎨
+
+MemPalace 现在提供类似 Obsidian 的可视化界面，让你直观地浏览和管理 AI 记忆。
+
+### Web UI（推荐）
+
+**立即启动：**
+```bash
+# 安装 Web UI 依赖
+pip install -e ".[web]"
+
+# 启动 Web 服务器
+mempalace web
+
+# 访问 http://localhost:5000
+```
+
+**功能特性：**
+- 🏰 **宫殿视图** - 可视化翼、厅、房间层级结构
+- 🔍 **语义搜索** - 快速找到相关记忆
+- 📝 **记忆详情** - 查看完整记忆内容
+- 🕸️ **知识图谱** - 实体关系可视化（开发中）
+- 📊 **统计仪表板** - 记忆数量和分布（开发中）
+
+**完整指南：** [docs/VISUAL_GUIDE.md](docs/VISUAL_GUIDE.md) | [web_ui/README.md](web_ui/)
+
+### Obsidian 插件（即将推出）
+
+正在开发中，将支持：
+- 📚 在 Obsidian 中查看 MemPalace 记忆
+- 🔄 双向同步（Obsidian ↔ MemPalace）
+- 🕸️ Graph View 中显示记忆连接
+- ✏️ 使用 Obsidian 的编辑功能
+
+**开发文档：** [obsidian_plugin/README.md](obsidian_plugin/)
+
+---
+
 ## 如何实际使用它
 
 一次性设置（安装 → 初始化 → 挖掘）后，你不再手动运行 MemPalace 命令。你的 AI 会为你使用它。有两种方式，取决于你使用的 AI。
