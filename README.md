@@ -459,6 +459,23 @@ claude mcp add mempalace -- python -m mempalace.mcp_server
 
 The AI learns AAAK and the memory protocol automatically from the `mempalace_status` response. No manual configuration.
 
+### Supported AI Tools
+
+MemPalace MCP server works with all MCP-compatible AI tools:
+
+| Tool | Configuration | Quick Start |
+|------|--------------|-------------|
+| **Claude Code** | `claude mcp add` | [One-Command Setup](docs/ALL_TOOLS_QUICKSTART.md) |
+| **Claude Desktop** | Config file | [Config Guide](docs/configs/claude-desktop.json) |
+| **Cursor** | Settings UI or config | [Config Guide](docs/configs/cursor.json) |
+| **Codex** | Config file | [Config Guide](docs/configs/codex.json) |
+| **Trae** | Config file | [Config Guide](docs/configs/trae.json) |
+| **Cline** | VS Code settings | [Config Guide](docs/configs/cline.json) |
+| **OpenClaw** | Config file | [Full Guide](docs/OPENCLAW_INTEGRATION.md) |
+
+**📖 Complete Integration Guide:** [docs/UNIVERSAL_MCP_GUIDE.md](docs/UNIVERSAL_MCP_GUIDE.md)
+**🚀 All Tools Quick Start:** [docs/ALL_TOOLS_QUICKSTART.md](docs/ALL_TOOLS_QUICKSTART.md)
+
 ---
 
 ## Auto-Save Hooks

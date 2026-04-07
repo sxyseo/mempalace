@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mempalace": {
+      "command": "/Users/abel/dev/mempalace/mcp_server.sh",
+      "description": "MemPalace AI 记忆系统 - 长期记忆和知识管理",
+      "env": {
+        "MEMPALACE_PALACE_PATH": "~/.mempalace/palace"
+      }
+    }
+  },
+  "_notes": "将此配置添加到 ~/Library/Application Support/Claude/claude_desktop_config.json",
+  "_platform": "macOS"
+}

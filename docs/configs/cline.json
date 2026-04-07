@@ -1,0 +1,12 @@
+{
+  "cline.mcp.servers": {
+    "mempalace": {
+      "command": "/Users/abel/dev/mempalace/mcp_server.sh",
+      "description": "MemPalace AI 记忆系统 - Cline (VS Code) 集成",
+      "timeout": 30,
+      "enabled": true
+    }
+  },
+  "_notes": "将此配置添加到 .vscode/settings.json 或 VS Code Settings 中",
+  "_setting_path": "Settings > 搜索 'cline.mcp.servers'"
+}

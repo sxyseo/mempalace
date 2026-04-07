@@ -459,6 +459,23 @@ claude mcp add mempalace -- python -m mempalace.mcp_server
 
 AI 自动从 `mempalace_status` 响应中学习 AAAK 和记忆协议。无需手动配置。
 
+### 支持的 AI 工具
+
+MemPalace MCP 服务器支持所有遵循 MCP 协议的 AI 工具：
+
+| 工具 | 配置方式 | 快速开始 |
+|------|---------|---------|
+| **Claude Code** | `claude mcp add` | [一键配置](docs/ALL_TOOLS_QUICKSTART.md) |
+| **Claude Desktop** | 配置文件 | [配置指南](docs/configs/claude-desktop.json) |
+| **Cursor** | 设置 UI 或配置 | [配置指南](docs/configs/cursor.json) |
+| **Codex** | 配置文件 | [配置指南](docs/configs/codex.json) |
+| **Trae** | 配置文件 | [配置指南](docs/configs/trae.json) |
+| **Cline** | VS Code 设置 | [配置指南](docs/configs/cline.json) |
+| **OpenClaw** | 配置文件 | [完整指南](docs/OPENCLAW_INTEGRATION.md) |
+
+**📖 完整集成指南：** [docs/UNIVERSAL_MCP_GUIDE.md](docs/UNIVERSAL_MCP_GUIDE.md)
+**🚀 所有工具快速开始：** [docs/ALL_TOOLS_QUICKSTART.md](docs/ALL_TOOLS_QUICKSTART.md)
+
 ---
 
 ## 自动保存钩子

@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "mempalace": {
+      "command": "/Users/abel/dev/mempalace/mcp_server.sh",
+      "timeout": 30,
+      "description": "MemPalace AI 记忆系统 - OpenAI Codex 集成"
+    }
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "type": "command",
+        "command": "/Users/abel/dev/mempalace/hooks/mempal_save_hook.sh",
+        "timeout": 30
+      }
+    ],
+    "PreCompact": [
+      {
+        "type": "command",
+        "command": "/Users/abel/dev/mempalace/hooks/mempal_precompact_hook.sh",
+        "timeout": 30
+      }
+    ]
+  },
+  "_notes": "将此配置添加到 ~/.codex/mcp_config.json 或 ~/.codex/config.json"
+}

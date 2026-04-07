@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "mempalace": {
+      "command": "/Users/abel/dev/mempalace/mcp_server.sh",
+      "description": "MemPalace AI 记忆系统 - 给你的 AI 一个长期记忆"
+    }
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/abel/dev/mempalace/hooks/mempal_save_hook.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/abel/dev/mempalace/hooks/mempal_precompact_hook.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  },
+  "_notes": "将此配置添加到 ~/.claude/settings.local.json"
+}
