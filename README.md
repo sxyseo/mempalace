@@ -4,6 +4,8 @@
 
 # MemPalace
 
+**[🇺🇸 English](README.md) | [🇨🇳 中文](README.zh-CN.md)**
+
 ### The highest-scoring AI memory system ever benchmarked. And it's free.
 
 <br>
@@ -663,6 +665,12 @@ No API key. No internet after install. Everything local.
 ```bash
 pip install mempalace
 ```
+
+---
+
+## Language / 语言
+
+**[🇺🇸 English](README.md)** | **[🇨🇳 中文](README.zh-CN.md)**
 
 ---
 

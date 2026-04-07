@@ -4,6 +4,8 @@
 
 # MemPalace
 
+**[🇺🇸 English](README.md) | [🇨🇳 中文](README.zh-CN.md)**
+
 ### 史上得分最高的 AI 记忆系统。而且它是免费的。
 
 <br>
@@ -663,6 +665,12 @@ mempalace/
 ```bash
 pip install mempalace
 ```
+
+---
+
+## 语言 / Language
+
+**[🇺🇸 English](README.md)** | **[🇨🇳 中文](README.zh-CN.md)**
 
 ---
 
