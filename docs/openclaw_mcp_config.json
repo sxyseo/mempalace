@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mempalace": {
+      "command": "/Users/abel/dev/mempalace/mcp_server.sh",
+      "description": "MemPalace AI 记忆系统 - 给你的 AI 一个长期记忆",
+      "enabled": true
+    }
+  },
+  "toolTimeouts": {
+    "mempalace": 30
+  },
+  "notes": "将此配置添加到 OpenClaw 的 MCP 配置文件中。根据 OpenClaw 的实现，配置文件可能位于 ~/.openclaw/mcp_config.json 或类似位置。"
+}
