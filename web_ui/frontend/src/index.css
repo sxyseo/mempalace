@@ -95,7 +95,7 @@ body {
 }
 
 .markdown-content a {
-  @apply text-palace-400 hover:text-palace-300 underline;
+  @apply text-primary-400 hover:text-primary-300 underline;
 }
 
 .markdown-content blockquote {
