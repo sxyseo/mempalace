@@ -17,6 +17,7 @@ Commands:
     mempalace wake-up                     Show L0 + L1 wake-up context
     mempalace wake-up --wing my_app       Wake-up for a specific project
     mempalace status                      Show what's been filed
+    mempalace web                         Launch Web UI (obsidian-like interface)
 
 Examples:
     mempalace init ~/projects/my_app
@@ -24,6 +25,7 @@ Examples:
     mempalace mine ~/chats/claude-sessions --mode convos
     mempalace search "why did we switch to GraphQL"
     mempalace search "pricing discussion" --wing my_app --room costs
+    mempalace web                         # Launch web interface at http://localhost:5000
 """
 
 import os
@@ -145,6 +147,31 @@ def cmd_status(args):
 
     palace_path = os.path.expanduser(args.palace) if args.palace else MempalaceConfig().palace_path
     status(palace_path=palace_path)
+
+
+def cmd_web(args):
+    """Launch Web UI server."""
+    import sys
+    import subprocess
+
+    print("""
+    ╔═══════════════════════════════════════════════════════╗
+    ║                                                       ║
+    ║              MemPalace Web UI                         ║
+    ║                                                       ║
+    ╚═══════════════════════════════════════════════════════╝
+    """)
+
+    # Launch Flask app
+    from .web_ui.app import main as web_main
+    import sys
+
+    # Simulate args for web_main
+    sys.argv = ['mempalace web', '--host', args.host, '--port', str(args.port)]
+    if args.debug:
+        sys.argv.append('--debug')
+
+    web_main()
 
 
 def cmd_compress(args):
@@ -353,6 +380,12 @@ def main():
     # status
     sub.add_parser("status", help="Show what's been filed")
 
+    # web
+    p_web = sub.add_parser("web", help="Launch Web UI (obsidian-like interface)")
+    p_web.add_argument("--host", default="localhost", help="Host to bind to (default: localhost)")
+    p_web.add_argument("--port", type=int, default=5000, help="Port to bind to (default: 5000)")
+    p_web.add_argument("--debug", action="store_true", help="Enable debug mode")
+
     args = parser.parse_args()
 
     if not args.command:
@@ -367,6 +400,7 @@ def main():
         "compress": cmd_compress,
         "wake-up": cmd_wakeup,
         "status": cmd_status,
+        "web": cmd_web,
     }
     dispatch[args.command](args)
 

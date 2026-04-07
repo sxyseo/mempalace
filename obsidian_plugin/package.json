@@ -1,0 +1,29 @@
+{
+  "name": "mempalace-obsidian",
+  "version": "1.0.0",
+  "description": "MemPalace integration for Obsidian - View and manage AI memories in your vault",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "version": "node version-bump.mjs && git add manifest.json versions.json"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "mempalace",
+    "ai",
+    "memory"
+  ],
+  "author": "MemPalace",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/obsidian": "latest",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.19.11",
+    "obsidian": "latest",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  }
+}
